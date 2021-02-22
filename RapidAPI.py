@@ -15,7 +15,7 @@ from pathlib import Path
 
 # This is where the generated html will be saved (in the local directory)
 #  More information about the Path function is described at https://realpython.com/python-pathlib/
-data_folder = Path("C:/Users/myUserName/Documents/")
+data_folder = Path("/Users/kristina/Desktop/Output")
 outputFile = data_folder / "newsTrends.csv"
 
 # datetime object containing current date and time
@@ -54,7 +54,7 @@ data = res.read()
 json_dictionary = json.loads(data.decode("utf-8"))
 
 # Loop through dictionary keys to access each article
-for item in json_dictionary['articles']:
+for item in json_dictionary["articles"]:
     # Pull the title for this article into a variable.
     thisTitle = item['title']
     if debug>0:
