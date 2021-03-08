@@ -8,7 +8,7 @@ import numpy as np
 MAX_FEATURES = 10000
 MAX_LEN = 500  # Each movie review is paddded/truncated to 50 tokens
 #WORD_EMB_DIM = 256  # Dimension of each word embedding
-WORD_EMB_DIM = 32  # Dimension of each word embedding
+WORD_EMB_DIM = 32  # Dimension of each word embedding 
 
 # Training parameters
 NUM_EPOCHS = 10
